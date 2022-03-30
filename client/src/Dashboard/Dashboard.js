@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../shared/components/Navbar/Navbar';
+
 import './dashboard.css';
 import logo from '../images/logooo.png'
 import Hunar from '../images/KarigarLogo.png'
