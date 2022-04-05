@@ -5,19 +5,37 @@ import logo from '../images/logooo.png'
 import Hunar from '../images/KarigarLogo.png'
 
 import Button from '@mui/material/Button';
+
 function Dashboard() {
   return (
 
   <>
  
   <div className="mainContainer">
+
     <div className="Logo">
       <img src={Hunar} alt="" className="logo"/>
-      <h1>Karigar</h1>
+      <h1 className='LogoText'>Karigar</h1>
 
     </div>
     
+    
     <div className="rectangleDesign">
+    <nav class="navbar">
+
+
+
+ <ul class="nav-links">
+
+ <div class="menu">
+ <li><a>Home</a></li>
+ <li><a>About</a></li>
+
+ <li><a>Pricing</a></li>
+ <li><a>Contact</a></li>
+ </div>
+ </ul>
+ </nav>
       <div>
       <img src={logo} alt="Logo Picture" className='imageContainer' />
 
