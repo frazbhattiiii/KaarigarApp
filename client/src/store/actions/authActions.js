@@ -31,7 +31,7 @@ dispatch(openAlertMessage(response?.exception?.response?.data));
       localStorage.setItem('user',JSON.stringify(userDetails))
 
       dispatch(setUserDetails(userDetails));
-      history('/dashboard',{ replace: true })
+      history('/',{ replace: true })
  
      }
     }
@@ -48,8 +48,8 @@ const register =(userDetails,navigate)=>{
       const {userDetails}= response?.data;
       localStorage.setItem('user',JSON.stringify(userDetails))
 
-      dispatch(setUserDetails(userDetails));
-      navigate('/dashboard',{ replace: true })
+      dispatch(setUserDetails(userDetails)); 
+      navigate('/login',{ replace: true })
  
      }
     }

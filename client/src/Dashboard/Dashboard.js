@@ -1,12 +1,18 @@
 import React from 'react'
 
 import './dashboard.css';
-import logo from '../images/logooo.png'
+import logo from '../images/logooo.png';
 import Hunar from '../images/KarigarLogo.png'
+import { useNavigate } from 'react-router-dom';
 
-import Button from '@mui/material/Button';
+import Navbar from '../shared/components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate('/login')
+  }
   return (
 
   <>
@@ -21,25 +27,13 @@ function Dashboard() {
     
     
     <div className="rectangleDesign">
-    <nav class="navbar">
+    <Navbar/>
 
 
-
- <ul class="nav-links">
-
- <div class="menu">
- <li><a>Home</a></li>
- <li><a>About</a></li>
-
- <li><a>Pricing</a></li>
- <li><a>Contact</a></li>
- </div>
- </ul>
- </nav>
-      <div>
       <img src={logo} alt="Logo Picture" className='imageContainer' />
+      
 
-      </div>
+
     </div>
     <div className="textContainer">
     <div id="header">
@@ -57,6 +51,7 @@ function Dashboard() {
     <button
     // disableRipple={true}
     className='btn'
+    onClick={handleClick}
     >
       <div className="text">
         Login

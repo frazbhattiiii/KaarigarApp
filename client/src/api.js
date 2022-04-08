@@ -37,8 +37,10 @@ export const register = async(data)=>{
   } catch (exception) {
     return{
       
+      
       error: true,
       exception,
+
     }
 
   }

@@ -8,22 +8,33 @@ const Wrapper = styled('div')({
   width:'100%'
 })
 const Label = styled('p')({
- color:'#b9bbbe',
+ color:'black',
  textTransform:'uppercase',
  fontWeight:'600',
  fontSize:'16px',
+ marginBottom:'.5rem'
 
 })
 const Input = styled('input')({
   flexGrow:1,
   height:'40px',
-  border:'1px solid black',
+  
+  border:'none',
   borderRadius:'5px',
-  color:'#dcddde',
-  background:'#35393f',
+  color:'black',
+  background:'#EFF0F2',
+
   margin:'0',
   fontSize:'16px',
-  padding:'0 5px'
+  padding:'0 5px',
+  marginBottom:".5rem",
+  '&:focus': {
+    border:'1px solid #background: #CA7D23',
+    borderRadius:'5px',
+
+    
+},
+  
 })
 
 export default function InputWithLabel(props) {
@@ -37,7 +48,8 @@ export default function InputWithLabel(props) {
     {label}
     </Label>
     <Input  value={value} onChange={handleValueChange} type={type}
-    placeholder={placeholder}/>
+    placeholder={placeholder}
+    style={props.additionalStyles ?props.additionalStyles :{}}/>
   </Wrapper>
 
   )

@@ -7,14 +7,19 @@ export default function CustomPrimaryButton( {label,
   return (
    <Button variant='contained'
    sx={{
-     bgColor:'#5865F2',
+     backgroundColor:"#CA7D23",
+     
      color:'white',
      textTransform:'none',
      fontSize:'16px',
      fontWeight:'500',
-     width:'100%',
-     height:'40px',
-
+     width:'300px',
+     '&:hover': {
+      backgroundColor: '#874900',
+      color:'white',
+      
+  },
+     
    }}
    style={additionalStyles ?additionalStyles :{}}
    disabled={disabled}

@@ -10,7 +10,7 @@ export default function RedirectInfo({text,redirectText,additionalStyles,redirec
   return (
   <Typography
   sx={{
-    color:'#72767d'}}
+    color:'black'}}
     style={additionalStyles ?additionalStyles :{}}
     variant='subtitle2'
      
